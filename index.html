@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ESP32 Project Studio</title>
+<meta name="description" content="A picture-grid catalog of 100+ ESP32 project ideas for the C3, S3, C6 and C6+screen boards, a 46-module sensor kit, and a 3D printer — from breadboard prototype to practical printed device." />
+<!-- Social preview (drop assets/images/og-cover.png to enable) -->
+<meta property="og:title" content="ESP32 Project Studio" />
+<meta property="og:description" content="108 ESP32 projects across 12 categories — idea → breadboard/simulation → 3D-printed device. C3 · S3 · C6 · S3-CAM · T-Embed · Chameleon Ultra." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/images/og-cover.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ESP32 Project Studio" />
+<meta name="twitter:description" content="108 ESP32 projects from breadboard to 3D-printed device." />
+<meta name="twitter:image" content="assets/images/og-cover.png" />
+<meta name="theme-color" content="#00d2a8" />
+<link rel="stylesheet" href="styles.css" />
+<!-- Inline SVG favicon (always works); drop assets/images/icon.png for a richer app icon -->
+<link rel="apple-touch-icon" href="assets/images/icon.png" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2300d2a8'/%3E%3Ctext x='32' y='44' font-size='38' text-anchor='middle'%3E%F0%9F%A4%96%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand" id="homeBtn" title="Home">
+    <span class="brand-mark">⚡</span>
+    <span class="brand-text">ESP32 <strong>Project Studio</strong></span>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-view="projects">Projects</button>
+    <button class="tab" data-view="boards">Boards</button>
+    <button class="tab" data-view="components">Components</button>
+    <button class="tab" data-view="buy">Buy&nbsp;More</button>
+    <button class="tab" data-view="guides">Guides</button>
+  </nav>
+  <input id="search" class="search" type="search" placeholder="Search projects, sensors, boards…" autocomplete="off" />
+</header>
+
+<main id="main">
+  <!-- Filter bar (projects/components only) -->
+  <section id="filterbar" class="filterbar" hidden></section>
+
+  <!-- Intro / hero strip shown above the projects grid -->
+  <section id="hero" class="hero" hidden></section>
+
+  <!-- The picture grid -->
+  <section id="grid" class="grid" aria-live="polite"></section>
+
+  <!-- Empty state -->
+  <section id="empty" class="empty" hidden>
+    <p>Nothing matches those filters.</p>
+    <button class="btn" id="clearFilters">Clear filters</button>
+  </section>
+</main>
+
+<!-- Detail overlay -->
+<div id="overlay" class="overlay" hidden>
+  <div class="sheet" role="dialog" aria-modal="true">
+    <button class="sheet-close" id="sheetClose" aria-label="Close">✕</button>
+    <div id="sheetBody"></div>
+  </div>
+</div>
+
+<footer class="foot">
+  <span>Built for a maker's bench • C3 · S3 · C6 · C6+screen · S3-CAM · T-Embed · Chameleon Ultra</span>
+  <span class="foot-note">Open-source ideas, attributed on the <a href="#" id="footSources">Sources</a> tab.</span>
+</footer>
+
+<!-- Data (plain scripts so it works from file:// with no server) -->
+<script src="data/sources.js"></script>
+<script src="data/shopping.js"></script>
+<script src="data/boards.js"></script>
+<script src="data/modules.js"></script>
+<script src="data/guides.js"></script>
+<script src="data/projects.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
