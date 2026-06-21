@@ -285,3 +285,13 @@ _Single-product icons with a subtle shopping/upgrade vibe (amber accent). Same s
 - **`assets/images/lora.png`** — LoRa Module (SX1278 433/915 MHz): a clean isometric product icon of the part (Kilometer-range, license-free wireless links with no Wi-Fi needed.); warm amber upgrade glow, centered, no text.
 - **`assets/images/lipo.png`** — 1S LiPo + Charger (TP4056 / built-in): a clean isometric product icon of the part (Untethered, portable and wearable builds; deep-sleep battery sensors.); warm amber upgrade glow, centered, no text.
 - **`assets/images/servo-pantilt.png`** — Pan/Tilt Bracket + 2× SG90: a clean isometric product icon of the part (Aim a camera or sensor in two axes — trackers and scanners.); warm amber upgrade glow, centered, no text.
+
+---
+## Branding — social preview & app icon (2)
+
+These power link previews and the browser/home-screen icon. Both are already wired into `index.html`; just drop the PNGs in.
+
+- **`assets/images/og-cover.png`** (size **1200×630**, landscape) — Social/share cover for "ESP32 Project Studio". A premium hero banner: an ESP32-S3 board on a breadboard surrounded by a tasteful arc of small components (LED, OLED screen, ultrasonic sensor, servo, RGB LEDs) on the dark charcoal background (#0e1116) with a teal (#00d2a8) accent glow; flat-design isometric, soft studio lighting, lots of negative space on the left third for an overlaid title. NO text in the image itself (add the title later in any editor for crispness). Cohesive with the tile set.
+- **`assets/images/icon.png`** (size **512×512**, square) — App/favicon icon. A bold, simple emblem that still reads at 32×32: a stylized lightning bolt ⚡ or a minimal ESP32 chip mark in teal (#00d2a8) on a dark rounded-square background, centered, high contrast, flat, no text, no fine detail. Should look good as a circle crop too.
+
+_Tip: if you want the title baked into the OG cover, generate the text-free version above, then add "ESP32 Project Studio" in any image editor — AI-rendered text is often garbled at this size._
