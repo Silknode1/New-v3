@@ -67,11 +67,12 @@
   /* image element that prefers a dropped-in raster, falls back to the SVG tile */
   function thumb(item, theme, glyph, label) {
     var img = el("img", "thumb");
-    img.alt = item.title || label || "";
+    img.alt = item.title || item.name || label || "";
     img.loading = "lazy";
     var fallback = svgTile(theme, glyph, label);
-    if (item.tile) {
-      img.src = "assets/images/" + item.tile + ".png";
+    var key = item.tile || item.id;
+    if (key) {
+      img.src = "assets/images/" + key + ".png";
       img.onerror = function () { img.onerror = null; img.src = fallback; };
     } else {
       img.src = fallback;
@@ -329,7 +330,7 @@
   function openProject(id) {
     var p = projectById[id];
     if (!p) return;
-    var img = p.tile ? "assets/images/" + p.tile + ".png" : svgTile(p.category, p.glyph);
+    var img = "assets/images/" + (p.tile || p.id) + ".png";
     var partsHtml = (p.parts || []).map(function (pt) {
       var buy = (p.extraParts || []).indexOf(pt) >= 0;
       return "<span class='pill " + (buy ? "buy" : "own") + "'>" + esc(pt) + "</span>";
@@ -436,7 +437,7 @@
   function openBoard(id) {
     var b = boardById[id];
     if (!b) return;
-    var img = b.tile ? "assets/images/" + b.tile + ".png" : svgTile("Board", b.glyph, b.short || b.name);
+    var img = "assets/images/" + (b.tile || b.id) + ".png";
     var html = "<div class='detail-hero'><img src='" + img + "' onerror=\"this.onerror=null;this.src='" + svgTile("Board", b.glyph) + "'\"><div class='dh-text'>" +
       "<h2>" + esc(b.name) + "</h2><p class='lead'>" + esc(b.role) + "</p>" +
       "<div class='badges'>" + (b.tags || []).map(function (t) { return "<span class='badge b-cat'>" + esc(t) + "</span>"; }).join("") + "</div></div></div>";
@@ -458,7 +459,7 @@
     var m = moduleById[id];
     if (!m) return;
     var theme = m.category === "special" ? "Special" : m.category === "output" ? "Output" : "Input";
-    var html = "<div class='detail-hero'><img src='" + svgTile(theme, m.glyph) + "'><div class='dh-text'>" +
+    var html = "<div class='detail-hero'><img src='assets/images/" + m.id + ".png' onerror=\"this.onerror=null;this.src='" + svgTile(theme, m.glyph) + "'\"><div class='dh-text'>" +
       "<h2>" + esc(m.name) + "</h2><p class='lead'>" + esc(m.desc) + "</p>" +
       "<dl class='kv'><dt>Type</dt><dd>" + capital(m.category) + "</dd>" +
       "<dt>Interface</dt><dd>" + esc(m.interface || "—") + "</dd>" +
@@ -480,7 +481,7 @@
   function openShopping(id) {
     var s = shopping.filter(function (x) { return x.id === id; })[0];
     if (!s) return;
-    var html = "<div class='detail-hero'><img src='" + svgTile("Buy", s.glyph) + "'><div class='dh-text'>" +
+    var html = "<div class='detail-hero'><img src='assets/images/" + s.id + ".png' onerror=\"this.onerror=null;this.src='" + svgTile("Buy", s.glyph) + "'\"><div class='dh-text'>" +
       "<h2>" + esc(s.name) + "</h2><p class='lead'>" + esc(s.unlocks) + "</p>" +
       "<dl class='kv'><dt>Kind</dt><dd>" + esc(s.kind || "Add-on") + "</dd>" +
       (s.price ? "<dt>Typical price</dt><dd>" + esc(s.price) + "</dd>" : "") +

@@ -203,3 +203,85 @@ _Accent: indigo glow._
 ```
 [STYLE BLOCK above] Subject: Blink & Heartbeat LED — a scene with a tiny ESP32-C3 Super Mini board featuring LED (assorted), evoking a breadboard with glowing LEDs; warm emerald-green glow. 16:10, no text.
 ```
+
+---
+## Components — the 46-module kit (46)
+
+_Single-component product icons (not scenes): one module centered, floating, with a soft accent glow. Same dark background, 16:10, no text._
+
+### Inputs
+
+- **`assets/images/button.png`** — Push Button: a clean isometric product icon of this an input sensor (Momentary switch — the simplest digital input. Reads HIGH/LOW.); electric blue glow, centered, no wires.
+- **`assets/images/pot.png`** — Rotary Potentiometer: a clean isometric product icon of this an input sensor (Variable resistor giving an analog value across its travel.); electric blue glow, centered, no wires.
+- **`assets/images/joystick.png`** — 2-Axis Joystick: a clean isometric product icon of this an input sensor (Two potentiometers (X/Y) plus a push button — a thumb controller.); electric blue glow, centered, no wires.
+- **`assets/images/encoder.png`** — Rotary Encoder (KY-040): a clean isometric product icon of this an input sensor (Endless rotary knob with detents and a push button — perfect for menus.); electric blue glow, centered, no wires.
+- **`assets/images/pir.png`** — PIR Motion (HC-SR501): a clean isometric product icon of this an input sensor (Detects body heat movement — the classic motion trigger.); electric blue glow, centered, no wires.
+- **`assets/images/ultrasonic.png`** — Ultrasonic (HC-SR04): a clean isometric product icon of this an input sensor (Measures distance (2 cm–4 m) by timing an ultrasonic echo.); electric blue glow, centered, no wires.
+- **`assets/images/ir-recv.png`** — IR Receiver (VS1838B): a clean isometric product icon of this an input sensor (Demodulates 38 kHz IR — decode TV/AC remotes.); electric blue glow, centered, no wires.
+- **`assets/images/ldr.png`** — Photoresistor (LDR): a clean isometric product icon of this an input sensor (Resistance drops with light — measure ambient brightness.); electric blue glow, centered, no wires.
+- **`assets/images/mic.png`** — Analog Microphone / Sound: a clean isometric product icon of this an input sensor (Mic with amplifier — analog level out + digital threshold out.); electric blue glow, centered, no wires.
+- **`assets/images/dht11.png`** — DHT11 Temp + Humidity: a clean isometric product icon of this an input sensor (Combined temperature + humidity sensor over a single data line.); electric blue glow, centered, no wires.
+- **`assets/images/ds18b20.png`** — DS18B20 Temp Probe: a clean isometric product icon of this an input sensor (Waterproof-probe digital thermometer; many share one wire.); electric blue glow, centered, no wires.
+- **`assets/images/ntc.png`** — NTC Thermistor (KY-013): a clean isometric product icon of this an input sensor (Analog temperature via a temperature-dependent resistor.); electric blue glow, centered, no wires.
+- **`assets/images/tilt.png`** — Tilt Switch (SW-520D): a clean isometric product icon of this an input sensor (Ball-in-tube switch that opens/closes when tilted.); electric blue glow, centered, no wires.
+- **`assets/images/reed.png`** — Reed Switch (KY-021): a clean isometric product icon of this an input sensor (Closes near a magnet — the basis of door/window sensors.); electric blue glow, centered, no wires.
+- **`assets/images/hall.png`** — Hall Sensor (KY-003): a clean isometric product icon of this an input sensor (Detects magnetic fields — count rotations or detect presence.); electric blue glow, centered, no wires.
+- **`assets/images/touch.png`** — Capacitive Touch (TTP223): a clean isometric product icon of this an input sensor (Solid-state touch pad — no moving parts.); electric blue glow, centered, no wires.
+- **`assets/images/flame.png`** — Flame Sensor: a clean isometric product icon of this an input sensor (IR photodiode tuned to flame wavelengths — fire detection.); electric blue glow, centered, no wires.
+- **`assets/images/mq2.png`** — MQ-2 Gas / Smoke: a clean isometric product icon of this an input sensor (Detects smoke, LPG, methane — analog concentration + threshold.); electric blue glow, centered, no wires.
+- **`assets/images/soil.png`** — Soil Moisture: a clean isometric product icon of this an input sensor (Measures soil conductivity to estimate moisture.); electric blue glow, centered, no wires.
+- **`assets/images/water.png`** — Water Level Sensor: a clean isometric product icon of this an input sensor (Series of traces whose reading rises with water depth.); electric blue glow, centered, no wires.
+- **`assets/images/rain.png`** — Raindrop Sensor: a clean isometric product icon of this an input sensor (Surface board whose resistance drops when wet.); electric blue glow, centered, no wires.
+- **`assets/images/vibration.png`** — Vibration / Shock (SW-420): a clean isometric product icon of this an input sensor (Spring switch that triggers on knocks/vibration.); electric blue glow, centered, no wires.
+- **`assets/images/tracking.png`** — Line Tracking (TCRT5000): a clean isometric product icon of this an input sensor (Reflective IR sensor — sees black vs white surfaces.); electric blue glow, centered, no wires.
+- **`assets/images/ir-obstacle.png`** — IR Obstacle Avoidance: a clean isometric product icon of this an input sensor (IR emitter+receiver pair that detects nearby objects.); electric blue glow, centered, no wires.
+
+### Outputs
+
+- **`assets/images/led.png`** — LED (assorted): a clean isometric product icon of this an output actuator (The hello-world output; PWM it for brightness.); warm amber glow, centered, no wires.
+- **`assets/images/rgb-led.png`** — RGB LED (KY-016): a clean isometric product icon of this an output actuator (Three LEDs in one — mix any color with PWM.); warm amber glow, centered, no wires.
+- **`assets/images/ws2812.png`** — WS2812 Addressable RGB: a clean isometric product icon of this an output actuator (Chainable smart LEDs — control each pixel over one data line.); warm amber glow, centered, no wires.
+- **`assets/images/ledbar.png`** — LED Bar Graph (10-seg): a clean isometric product icon of this an output actuator (Ten LEDs in a row — analog-style level meters.); warm amber glow, centered, no wires.
+- **`assets/images/tm1637.png`** — TM1637 4-Digit 7-Seg: a clean isometric product icon of this an output actuator (Four-digit numeric display on just two pins.); warm amber glow, centered, no wires.
+- **`assets/images/lcd1602.png`** — LCD1602 (I2C): a clean isometric product icon of this an output actuator (16×2 character LCD with an I2C backpack — two-wire text.); warm amber glow, centered, no wires.
+- **`assets/images/oled.png`** — OLED SSD1306 (I2C): a clean isometric product icon of this an output actuator (Crisp 128×64 monochrome graphics display on two wires.); warm amber glow, centered, no wires.
+- **`assets/images/buzzer-active.png`** — Active Buzzer: a clean isometric product icon of this an output actuator (Beeps with a single HIGH — fixed tone alerts.); warm amber glow, centered, no wires.
+- **`assets/images/buzzer-passive.png`** — Passive Buzzer: a clean isometric product icon of this an output actuator (Driven with a frequency — play notes and melodies.); warm amber glow, centered, no wires.
+- **`assets/images/relay.png`** — Relay Module (1-ch): a clean isometric product icon of this an output actuator (Switch mains/high-power loads from a GPIO via an isolated relay.); warm amber glow, centered, no wires.
+- **`assets/images/servo.png`** — Servo SG90: a clean isometric product icon of this an output actuator (Positions an arm 0–180° — gauges, locks, pan/tilt.); warm amber glow, centered, no wires.
+- **`assets/images/stepper.png`** — 28BYJ-48 Stepper + ULN2003: a clean isometric product icon of this an output actuator (Precise multi-turn rotation via a geared stepper + driver board.); warm amber glow, centered, no wires.
+- **`assets/images/dcmotor.png`** — DC Motor + L9110: a clean isometric product icon of this an output actuator (Drive a DC motor forward/reverse with speed control.); warm amber glow, centered, no wires.
+- **`assets/images/laser.png`** — Laser Diode (KY-008): a clean isometric product icon of this an output actuator (Tiny red laser dot — tripwires and pointers.); warm amber glow, centered, no wires.
+- **`assets/images/ir-tx.png`** — IR Transmitter LED: a clean isometric product icon of this an output actuator (Sends IR codes — be a universal remote / AC controller.); warm amber glow, centered, no wires.
+- **`assets/images/matrix.png`** — 8×8 LED Matrix (MAX7219): a clean isometric product icon of this an output actuator (64-LED grid for scrolling text, icons and simple games.); warm amber glow, centered, no wires.
+- **`assets/images/dual-led.png`** — Dual-Color LED (KY-011): a clean isometric product icon of this an output actuator (Red+green in one package — mix to amber for status indicators.); warm amber glow, centered, no wires.
+- **`assets/images/flash-led.png`** — 7-Color Flash LED (KY-034): a clean isometric product icon of this an output actuator (Self-cycling color LED — power it and it animates.); warm amber glow, centered, no wires.
+
+### Utility / interface
+
+- **`assets/images/rtc.png`** — RTC DS1307 (I2C): a clean isometric product icon of this a utility module (Battery-backed real-time clock — keeps time without power/Wi-Fi.); teal glow, centered, no wires.
+- **`assets/images/keypad.png`** — 4×4 Membrane Keypad: a clean isometric product icon of this a utility module (16 keys on a scanned row/column matrix — PIN entry & menus.); teal glow, centered, no wires.
+- **`assets/images/shift.png`** — 74HC595 Shift Register: a clean isometric product icon of this a utility module (Turn 3 pins into 8 outputs — and chain for more.); teal glow, centered, no wires.
+- **`assets/images/psu.png`** — MB102 Breadboard PSU: a clean isometric product icon of this a utility module (Plugs onto a breadboard's rails to supply clean 3.3V/5V.); teal glow, centered, no wires.
+
+
+---
+## Buy-More — recommended add-on parts (15)
+
+_Single-product icons with a subtle shopping/upgrade vibe (amber accent). Same style, 16:10, no text._
+
+- **`assets/images/bme280.png`** — BME280 / BME680 Environmental Sensor: a clean isometric product icon of the part (Lab-grade temperature, humidity, barometric pressure (BME680 adds gas/air-quality).); warm amber upgrade glow, centered, no text.
+- **`assets/images/ssd1306.png`** — SSD1306 0.96" OLED: a clean isometric product icon of the part (Crisp little status display for any project — and the classic DHT+OLED build.); warm amber upgrade glow, centered, no text.
+- **`assets/images/mpu6050.png`** — MPU6050 Accelerometer + Gyro (IMU): a clean isometric product icon of the part (Motion, tilt, orientation, step counting, gesture and impact/fall detection.); warm amber upgrade glow, centered, no text.
+- **`assets/images/rc522.png`** — RC522 RFID Reader + Cards: a clean isometric product icon of the part (13.56 MHz RFID read/write — access tags, attendance, inventory (separate from Chameleon).); warm amber upgrade glow, centered, no text.
+- **`assets/images/inmp441.png`** — INMP441 I2S Microphone: a clean isometric product icon of the part (Clean digital audio capture for VU meters, sound classifiers and voice features.); warm amber upgrade glow, centered, no text.
+- **`assets/images/max98357.png`** — MAX98357A I2S Amplifier + Speaker: a clean isometric product icon of the part (Real sound output: music, web radio, spoken alerts/TTS, alarm tones.); warm amber upgrade glow, centered, no text.
+- **`assets/images/ws2812-strip.png`** — WS2812B Addressable LED Strip: a clean isometric product icon of the part (WLED ambient lighting, notifiers, status bars, and big sound-reactive effects.); warm amber upgrade glow, centered, no text.
+- **`assets/images/microsd.png`** — MicroSD Card Module: a clean isometric product icon of the part (Local data logging, image/audio storage, web-server file hosting.); warm amber upgrade glow, centered, no text.
+- **`assets/images/neo6m.png`** — NEO-6M / NEO-M8N GPS Module: a clean isometric product icon of the part (Location, speed and accurate time — GPS loggers and trackers.); warm amber upgrade glow, centered, no text.
+- **`assets/images/hx711.png`** — HX711 + Load Cell: a clean isometric product icon of the part (Weight/force measurement — smart scales, fill monitors, presence-by-weight.); warm amber upgrade glow, centered, no text.
+- **`assets/images/ds3231.png`** — DS3231 Precision RTC: a clean isometric product icon of the part (Accurate timekeeping with a backup battery for offline clocks/loggers.); warm amber upgrade glow, centered, no text.
+- **`assets/images/epaper.png`** — E-Paper / E-Ink Display (2.9"): a clean isometric product icon of the part (Ultra-low-power always-on info tags: weather, calendar, name badges.); warm amber upgrade glow, centered, no text.
+- **`assets/images/lora.png`** — LoRa Module (SX1278 433/915 MHz): a clean isometric product icon of the part (Kilometer-range, license-free wireless links with no Wi-Fi needed.); warm amber upgrade glow, centered, no text.
+- **`assets/images/lipo.png`** — 1S LiPo + Charger (TP4056 / built-in): a clean isometric product icon of the part (Untethered, portable and wearable builds; deep-sleep battery sensors.); warm amber upgrade glow, centered, no text.
+- **`assets/images/servo-pantilt.png`** — Pan/Tilt Bracket + 2× SG90: a clean isometric product icon of the part (Aim a camera or sensor in two axes — trackers and scanners.); warm amber upgrade glow, centered, no text.
