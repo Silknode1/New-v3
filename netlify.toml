@@ -1,0 +1,5 @@
+# Netlify config — static site, no build step.
+# Publishes the repo root (index.html). Auto-redeploys on every push to main.
+[build]
+  publish = "."
+  command = ""
